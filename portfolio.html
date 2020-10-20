@@ -10,109 +10,114 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a class="logo link" href="#"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li><a class="item link" href="./index.html">Студия</a></li>
-          <li><a class="item link open-page" href="#" target="_blank">Портфолио</a></li>
-          <li><a class="item link" href="#">Контакты</a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a class="logo link" href="#"><span class="logo-accent">Web</span>Studio</a>
+          <ul class="site-nav list">
+            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link open-page" href="#">Портфолио</a></li>
+            <li class="item"><a class="link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-link list">
+          <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contact-link list">
-        <li><a class="item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <section class="works">
-        <div>
-          <button class="btn primary" type="button">Все</button>
-          <button class="btn secondary" type="button">Веб-сайты</button>
-          <button class="btn secondary" type="button">Приложения</button>
-          <button class="btn secondary" type="button">Дизайн</button>
-          <button class="btn secondary" type="button">Маркетинг</button>
+        <div class="container">
+          <ul class="list radio-btn">
+            <li class="item"><a class="btn primary link" href="#">Все</a></li>
+            <li class="item"><a class="btn secondary link" href="#">Веб-сайты</a></li>
+            <li class="item"><a class="btn secondary link" href="#">Приложения</a></li>
+            <li class="item"><a class="btn secondary link" href="#">Дизайн</a></li>
+            <li class="item"><a class="btn secondary link" href="#">Маркетинг</a></li>
+          </ul>
+          <ul class="works-list list">
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-technokryak-1.jpg" alt="страница веб-сайта 'технокряк'" width="370" height="294">
+                <h2 class="work-title title">Технокряк</h2>
+                <p class="work-subtitle">Веб-сайт</p>
+              </a>  
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-new-orlean-2.jpg" alt="постер с баскетболистами" width="370" height="294">
+                <h2 class="work-title title">Постер New Orlean vs Golden Star</h2>
+                <p class="work-subtitle">Дизайн</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-seafood-3.jpg" alt="логотип ресторана 'Seafood'" width="370" height="294">
+                <h2 class="work-title title">Ресторан Seafood</h2>
+                <p class="work-subtitle">Приложение</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-prime-4.jpg" alt="черные наушники" width="370" height="294">
+                <h2 class="work-title title">Проект Prime</h2>
+                <p class="work-subtitle">Маркетинг</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-boxes-5.jpg" alt="две картонные коробки" width="370" height="294">
+                <h2 class="work-title title">Проект Boxes</h2>
+                <p class="work-subtitle">Приложение</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-inspiration-6.jpg" alt="монитор, на котором изображена карта мира" width="370" height="294">
+                <h2 class="work-title title">Inspiration has no Borders</h2>
+                <p class="work-subtitle">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-limited-edition-7.jpg" alt="разворот глянцевого журнала" width="370" height="294">
+                <h2 class="work-title title">Издание Limited Edition</h2>
+                <p class="work-subtitle">Дизайн</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-lab-8.jpg" alt="этикетка товара на шнурке" width="370" height="294">
+                <h2 class="work-title title">Проект LAB</h2>
+                <p class="work-subtitle">Маркетинг</p>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="#">
+                <img class="preview-work" src="./images/portfolio-growing-business-9.jpg" alt="экран ноутбука с открытым приложением для бизнеса" width="370" height="294">
+                <h2 class="work-title title">Growing Business</h2>
+                <p class="work-subtitle">Приложение</p>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <ul class="list">
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-technokryak-1.jpg" alt="страница веб-сайта 'технокряк'" width="370" height="294">
-              <h2 class="work-title title">Технокряк</h2>
-              <p class="work-subtitle">Веб-сайт</p>
-            </a>  
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-new-orlean-2.jpg" alt="постер с баскетболистами" width="370" height="294">
-              <h2 class="work-title title">Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-seafood-3.jpg" alt="логотип ресторана 'Seafood'" width="370" height="294">
-              <h2 class="work-title title">Ресторан Seafood</h2>
-              <p class="work-subtitle">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-prime-4.jpg" alt="черные наушники" width="370" height="294">
-              <h2 class="work-title title">Проект Prime</h2>
-              <p class="work-subtitle">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-boxes-5.jpg" alt="две картонные коробки" width="370" height="294">
-              <h2 class="work-title title">Проект Boxes</h2>
-              <p class="work-subtitle">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-inspiration-6.jpg" alt="монитор, на котором изображена карта мира" width="370" height="294">
-              <h2 class="work-title title">Inspiration has no Borders</h2>
-              <p class="work-subtitle">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-limited-edition-7.jpg" alt="разворот глянцевого журнала" width="370" height="294">
-              <h2 class="work-title title">Издание Limited Edition</h2>
-              <p class="work-subtitle">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-lab-8.jpg" alt="этикетка товара на шнурке" width="370" height="294">
-              <h2 class="work-title title">Проект LAB</h2>
-              <p class="work-subtitle">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="#" target="_blank">
-              <img src="./images/portfolio-growing-business-9.jpg" alt="экран ноутбука с открытым приложением для бизнеса" width="370" height="294">
-              <h2 class="work-title title">Growing Business</h2>
-              <p class="work-subtitle">Приложение</p>
-            </a>
-          </li>
-        </ul>
       </section> 
     </main>
 
-    <footer class="draft-bg">
-      <div class="address">
-        <a class="logo link" href="#"><span class="logo-accent">Web</span>Studio</a>
-        <address class="address-text">
-          г. Киев, пр-т Леси Украинки, 26
-          <ul class="list">
-            <li><a class="item link" href="mailto:info@example.com">info@example.com</a></li>
-            <li><a class="item link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+    <footer class="footer draft-bg">
+      <div class="container"> 
+        <div class="address">
+          <a class="logo link" href="#"><span class="logo-accent">Web</span>Studio</a>
+          <address class="address-text">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+          <ul class="address-list list">
+            <li class="item"><a class="link" href="mailto:info@example.com">info@example.com</a></li>
+            <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

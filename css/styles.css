@@ -75,7 +75,8 @@ h1, h2, h3, h4, p {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* хедер */
@@ -175,13 +176,11 @@ h1, h2, h3, h4, p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero > .btn {
-  display: inline-block;
+.hero .btn {
   padding: 10px 32px;
   border-width: 0px;
   border-radius: 4px;
@@ -258,17 +257,19 @@ h1, h2, h3, h4, p {
 }
 
 .team-list .item{
-  width: calc((100% - 3 * 30px)/4);
-  background-color: var(--primary-white-color);
-  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 3 * 30px)/4); 
 }
 
 .team-list .item:not(:nth-child(4n)){
   margin-right: 30px;
 }
 
-.photo-team {
-  margin-bottom: 30px;
+.team-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 .team-title {
@@ -280,7 +281,7 @@ h1, h2, h3, h4, p {
 }
 
 .team-text {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -295,6 +296,7 @@ h1, h2, h3, h4, p {
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .address-text {
@@ -304,8 +306,7 @@ h1, h2, h3, h4, p {
   color: var(--primary-white-color);
 }
 
-.address .logo {
-  margin-right: 0;
+.logo.inverse {
   color: var(--primary-white-color);
 }
 
@@ -385,9 +386,6 @@ h1, h2, h3, h4, p {
   width: calc((100% - 2 * 30px)/3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--primary-grey-color);
 }
 
 .works-list .item:nth-child(3n){
@@ -398,11 +396,17 @@ h1, h2, h3, h4, p {
   margin-bottom: 0;
 }
 
-.work-description{
-  width: 322px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 20px 24px;
+.work-desc{
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-color: var(--primary-grey-color);
+  border-right-color: var(--primary-grey-color);
+  border-bottom-color: var(--primary-grey-color);
+  padding: 20px 24px;
 }
 
 .work-title {
